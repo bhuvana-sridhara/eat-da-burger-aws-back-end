@@ -1,0 +1,6 @@
+CREATE DATABASE ToDoList;
+
+CREATE TABLE todo(
+  todo_id SERIAL PRIMARY KEY,
+  description VARCHAR(255)
+);
