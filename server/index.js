@@ -15,6 +15,12 @@ app.use(express.json()); //req.body
 
 //create a todo
 
+app.get("/health", async (req, res) => {
+  console.log("called health check");
+  res.status(200);
+  res.send('All good!');
+});
+
 app.post("/todos", async (req, res) => {
   console.log("called API /todos insert");
   try {
